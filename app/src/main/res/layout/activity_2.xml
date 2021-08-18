@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".Activity2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/compunding_tool"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:text="@string/amount"
+        android:textColor="@color/black"
+        android:textSize="35sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/dollor"
+        android:drawablePadding="10dp"
+        android:hint="@string/_1000"
+        android:paddingTop="10dp"
+        android:textSize="30sp"
+        android:inputType="number">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/time_period_years"
+        android:textColor="@color/black"
+        android:textSize="35sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/time_t"
+        android:drawablePadding="10dp"
+        android:hint="@string/_1"
+        android:inputType="numberDecimal"
+        android:paddingTop="10dp"
+        android:textSize="30sp"
+        android:autofillHints="20">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cagr_intrest"
+        android:textColor="@color/black"
+        android:textSize="35sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/cagr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:drawableStart="@drawable/cagr"
+        android:drawablePadding="10dp"
+        android:hint="@string/_20"
+        android:inputType="number"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:textSize="30sp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:padding="15dp"
+        android:text="@string/calucalte"
+        android:textSize="25sp">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/_0"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="55sp">
+
+    </TextView>
+
+
+</LinearLayout>

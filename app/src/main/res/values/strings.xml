@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Compounding Calculator</string>
+    <string name="calucalte">Calucalte</string>
+    <string name="_0">0</string>
+    <string name="_20">20</string>
+    <string name="cagr_intrest">CAGR / Intrest %</string>
+    <string name="_1">1</string>
+    <string name="time_period_years">Time Period (Years)</string>
+    <string name="_1000">$1000</string>
+    <string name="compunding_tool">Compunding Tool</string>
+    <string name="amount">Amount</string>
+    <string name="compunding_n_is_key_n_to_the_n_success">Compunding\n is Key\n to the\n Success!!</string>
+    <string name="let_s_go">Let\'s Go.</string>
+    <string name="nil">NIL</string>
+
+
+</resources>
