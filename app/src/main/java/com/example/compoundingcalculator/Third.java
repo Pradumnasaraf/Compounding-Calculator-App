@@ -1,5 +1,6 @@
 package com.example.compoundingcalculator;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -11,20 +12,21 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Activity2 extends AppCompatActivity {
+public class Third extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_2);
-
+        setContentView(R.layout.activity_third);
 
         EditText e1 = findViewById(R.id.amount);
         EditText e2 = findViewById(R.id.time);
         EditText e3 = findViewById(R.id.cagr);
         TextView t1 = findViewById(R.id.result);
         Button b1 = findViewById(R.id.button);
-
+        TextView t2 = findViewById(R.id.name);
+        t2.setText("Hey! " + getIntent().getStringExtra("name"));
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,7 +35,7 @@ public class Activity2 extends AppCompatActivity {
                 if (TextUtils.isEmpty(e1.getText()) || TextUtils.isEmpty(e2.getText()) || TextUtils.isEmpty(e3.getText()) ||
                         !TextUtils.isDigitsOnly(e1.getText()) || !TextUtils.isDigitsOnly(e2.getText()) || !TextUtils.isDigitsOnly(e3.getText())) {
 
-                    Toast t = Toast.makeText(Activity2.this, "Invalid Input!!", Toast.LENGTH_SHORT);
+                    Toast t = Toast.makeText(Third.this, "Invalid Input!!", Toast.LENGTH_SHORT);
                     t.show();
 
                 } else {

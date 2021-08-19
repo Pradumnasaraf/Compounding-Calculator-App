@@ -32,5 +32,13 @@
         android:text="@string/let_s_go"
         android:layout_gravity="end"
         android:textStyle="bold|italic"
-        android:textSize="18sp"></TextView>
+        android:textSize="18sp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:text="@string/developed_by_pradumna_saraf"></TextView>
 </LinearLayout>

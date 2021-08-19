@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CompoundingCalculator">
         <activity
-            android:name=".Activity2"
+            android:name=".Second"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Third"
+            android:exported="true" />
+        <activity
+            android:name=".First"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

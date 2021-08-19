@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/arrow.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/forward.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_chevron_right_24.xml" value="0.13055555555555556" />
+        <entry key="app/src/main/res/drawable/ic_baseline_trending_up_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/time_t.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_2.xml" value="0.13614864864864865" />
+        <entry key="app/src/main/res/layout/activity_first.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.12" />
+        <entry key="app/src/main/res/layout/activity_second.xml" value="0.16" />
       </map>
     </option>
   </component>
