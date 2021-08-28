@@ -57,7 +57,7 @@
         android:hint="@string/_1000"
         android:paddingTop="10dp"
         android:textSize="30sp"
-        android:inputType="number">
+        android:inputType="numberDecimal">
 
     </EditText>
 
@@ -103,7 +103,7 @@
         android:drawableStart="@drawable/cagr"
         android:drawablePadding="10dp"
         android:hint="@string/_20"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:paddingTop="10dp"
         android:paddingBottom="20dp"
         android:textSize="30sp">

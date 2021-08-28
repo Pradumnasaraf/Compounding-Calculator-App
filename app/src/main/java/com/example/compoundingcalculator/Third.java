@@ -3,6 +3,7 @@ package com.example.compoundingcalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.icu.number.NumberFormatter;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -11,6 +12,9 @@ import android.widget.EditText;
 
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 
 public class Third extends AppCompatActivity {
 
@@ -32,8 +36,7 @@ public class Third extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if (TextUtils.isEmpty(e1.getText()) || TextUtils.isEmpty(e2.getText()) || TextUtils.isEmpty(e3.getText()) ||
-                        !TextUtils.isDigitsOnly(e1.getText()) || !TextUtils.isDigitsOnly(e2.getText()) || !TextUtils.isDigitsOnly(e3.getText())) {
+                if (TextUtils.isEmpty(e1.getText()) || TextUtils.isEmpty(e2.getText()) || TextUtils.isEmpty(e3.getText())) {
 
                     Toast t = Toast.makeText(Third.this, "Invalid Input!!", Toast.LENGTH_SHORT);
                     t.show();
@@ -46,9 +49,12 @@ public class Third extends AppCompatActivity {
                     for (int i = 1; i <= time; i++) {
                         amount = amount + (amount * cagr / 100);
                     }
-                    int b = (int) amount;
 
-                    t1.setText("$" + b);
+                    // Decimal formatter will only return decimal number number 1 place eg: 0.1
+                    DecimalFormat decimalFormat = new DecimalFormat("0.0");
+                    String formattedDecimal = decimalFormat.format(amount);
+
+                    t1.setText("$" + formattedDecimal);
 
                 }
 
