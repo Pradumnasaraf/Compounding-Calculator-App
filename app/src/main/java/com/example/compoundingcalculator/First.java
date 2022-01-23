@@ -17,7 +17,6 @@ public class First extends AppCompatActivity {
         ImageButton imageButton = findViewById(R.id.button);
 
         imageButton.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(First.this, Second.class);
